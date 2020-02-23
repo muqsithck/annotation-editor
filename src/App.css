@@ -29,3 +29,16 @@
   color: #838585;
   margin: 0px !important;
 }
+
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container{
+  height: 100vh;
+  min-height: 500px;
+  padding: 10px;
+}

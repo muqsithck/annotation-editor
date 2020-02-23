@@ -1,6 +1,7 @@
 .option-control-wrapper{
     padding: 10px;
     border-bottom: 2px solid #eeeeee;
+    display: flex
 }
 
 
@@ -22,5 +23,14 @@
 .option-control-button:hover {
     color: #46B0EE;
     font-weight: 600;
-
 } 
+
+
+.btn-effect-show{
+    display: block;
+}
+
+.btn-effect-trigger:hover .btn-effect-show{
+    display: block;
+} 
+
