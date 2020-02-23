@@ -1,0 +1,26 @@
+.option-control-wrapper{
+    padding: 10px;
+    border-bottom: 2px solid #eeeeee;
+}
+
+
+.option-control-button{
+    padding: 8px;
+    border-radius: 4px;
+    width: auto;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+
+    font-size: 14px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: #8d9191;
+}
+
+
+.option-control-button:hover {
+    color: #46B0EE;
+    font-weight: 600;
+
+} 

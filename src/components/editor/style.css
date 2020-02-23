@@ -1,0 +1,16 @@
+
+
+#canvas {
+    width:80%;
+    height:350px;
+    background-image: url('../../assets/13730708213_902f8a90d3_h-1-960x540.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.rectangle {
+    border: 10px solid blueviolet;
+    position: absolute;
+    background-color: blueviolet;
+    opacity: .6;
+    
+}
