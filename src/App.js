@@ -168,7 +168,7 @@ export default function App() {
 
   return (
     <Grid container className='app-container'>
-      <Grid item md={3}>
+      <Grid item md={3} sm={12}>
         <Settings
         shapeHandler={shapeHandler}
         squares={squares}
@@ -176,7 +176,7 @@ export default function App() {
         undoOnClick={undoOnClick}
         />
       </Grid>
-      <Grid item md={3} style={{ backgroundColor: "#fff" }}>
+      <Grid item md={3} sm={12} style={{ backgroundColor: "#fff" }}>
         <Option
           undoOnClick={undoOnClick}
           redoOnClick={redoOnClick}
@@ -187,7 +187,7 @@ export default function App() {
       </Grid>
       <Grid
         item
-        md={6}
+        md={6} sm={12}
         className="flex-center"
       >
         <Editor

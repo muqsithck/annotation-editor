@@ -21,6 +21,18 @@
     margin-bottom: 4px !important
 }
 
+.item-label-wrapper-flex{
+    display: flex;
+}
+
+.color-circle{
+    height: 18px;
+    width:18px;
+    border-radius: 50%;
+    background-color: rebeccapurple;
+    margin-right: 8px;
+}
+
 .item-option-wrapper{
     background-color: #ffffff;
     padding: 12px;
@@ -80,5 +92,11 @@
     display: flex
     ; justify-content: flex-end;
     padding-top: 10px;
+}
+
+
+.input-box{
+    border: none;
+    opacity: .6;
 }
 

@@ -6,8 +6,10 @@ export default function items(props) {
 
   return (
     <Grid container>
-      <Grid item md={12} className="item-label-wrapper">
-        <p className="heading-two">catogery</p>
+      <Grid item md={12} className="item-label-wrapper item-label-wrapper-flex">
+       <div className="color-circle"></div> 
+       <input className="input-box" placeholder="Enter category label..."  />
+
       </Grid>
       <Grid item md={12} className="item-option-wrapper">
         <Grid container>

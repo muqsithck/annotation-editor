@@ -4,14 +4,14 @@ import {Grid} from '@material-ui/core'
 export default function settingsOption() {
     return (
         <Grid container>
-        <Grid item md={5}>
+        <Grid item md={5} sm={12}>
           <p className="heading-two">CATEGORIES</p>
         </Grid>
         
-        <Grid item md={5}>
+        <Grid item md={5} sm={12}>
           <p className="heading-three">ATTRIBUTES</p>
         </Grid>
-        <Grid item md={2}> 
+        <Grid item md={2} sm={12}> 
           <p className="heading-two">+ADD</p>
         </Grid>
       </Grid>
