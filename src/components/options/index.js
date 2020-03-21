@@ -4,33 +4,29 @@ import "./style.css";
 
 export default function index(props) {
   return (
-    <Grid container>
-      <Grid item md={12} className="option-control-wrapper">
+    <Grid container style={{display:"flex", justifyContent:"flex-end"}}>
+      
         <button className="option-control-button"
         onClick={props.zoomInitial}
-        > ZOOM 100% </button>
-      </Grid>
-      <Grid item md={12} className="option-control-wrapper">
+        > Zoom 100% </button> 
+    
         <button 
         onClick={props.zoomIn}
-        className="option-control-button"> ZOOM In </button>
-      </Grid>
-      <Grid item md={12} className="option-control-wrapper">
+        className="option-control-button"> Zoom In </button>
+     
         <button
         onClick={props.zoomOut}
-        className="option-control-button"> ZOOM Out </button>
-      </Grid>
-      <Grid item md={12} className="option-control-wrapper">
+        className="option-control-button"> Zoom Out </button>
+    
         <button className="option-control-button"
          onClick={props.redoOnClick}>
           Redo
         </button>
-      </Grid>
-      <Grid item md={12} className="option-control-wrapper">
+    
         <button className="option-control-button" onClick={props.undoOnClick}>
           Undo
         </button>
-      </Grid>
+   
     </Grid>
   );
 }

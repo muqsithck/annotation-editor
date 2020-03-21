@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Grid } from "@material-ui/core";
+import { Grid , Container} from "@material-ui/core";
 import Editor from "./components/editor";
 import Settings from "./components/settings";
 import Option from "./components/options";
@@ -23,7 +23,6 @@ export default function App() {
   let [zoomValue, setZoomValue] = useState(1);
   let [shape, setShape] = useState("0%")
 
- 
 
   // Undo and redo controll 
   const undoOnClick = () => {
@@ -167,16 +166,12 @@ export default function App() {
   }
 
   return (
-    <Grid container className='app-container'>
-      <Grid item md={3} sm={12}>
-        <Settings
-        shapeHandler={shapeHandler}
-        squares={squares}
-        redius={shape}
-        undoOnClick={undoOnClick}
-        />
+    <Container maxWidth="lg" >
+    <Grid container className='app-container'  >
+      <Grid  item md={12} className="head">
+          Annotation Editor
       </Grid>
-      <Grid item md={3} sm={12} style={{ backgroundColor: "#fff" }}>
+      <Grid item md={12} sm={12}>
         <Option
           undoOnClick={undoOnClick}
           redoOnClick={redoOnClick}
@@ -185,9 +180,19 @@ export default function App() {
           zoomOut={zoomOut}
         />
       </Grid>
+     
+      <Grid item md={3} sm={12}>
+        <Settings
+        shapeHandler={shapeHandler}
+        squares={squares}
+        redius={shape}
+        undoOnClick={undoOnClick}
+        />
+      </Grid>
+        
       <Grid
         item
-        md={6} sm={12}
+        md={9} sm={12}
         className="flex-center"
       >
         <Editor
@@ -197,7 +202,8 @@ export default function App() {
           zoom={zoom}
           redius={shape}
         />
-      </Grid>
+      </Grid>  
     </Grid>
+    </Container>
   );
 }

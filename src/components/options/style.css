@@ -1,19 +1,21 @@
 .option-control-wrapper{
-    padding: 10px;
+    padding: 5px;
     border-bottom: 2px solid #eeeeee;
     display: flex
 }
 
 
 .option-control-button{
-    padding: 8px;
-    border-radius: 4px;
+    padding: 5px 6px;
+    margin: 5px 6px;
+    min-width:50px;
+    border-radius: 1px;
     width: auto;
     cursor: pointer;
     border: none;
-    background-color: transparent;
+    background-color: #fff;
 
-    font-size: 14px;
+    font-size: 10px;
     font-family: 'Roboto';
     font-weight: 400;
     color: #8d9191;
